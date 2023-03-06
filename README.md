@@ -3,6 +3,8 @@
 
 Churn Modelling Random Forest Example
 This is an example of how to apply Random Forest on the Churn Modelling dataset using Python and scikit-learn. The goal of this example is to predict whether a customer will churn (i.e., close their account) based on a number of features such as their credit score, age, and number of products.
+
+
 Getting Started
 
 To run this example, you will need Python 3 and the following Python packages:
@@ -21,6 +23,8 @@ Once you have installed the necessary packages, you can run the example by execu
 python random_forest_churn.py
 
 This will load the Churn Modelling dataset, preprocess the data, split it into training and testing sets, train a Random Forest classifier on the training data, and evaluate the classifier's performance on the testing data. The accuracy score of the classifier will be printed to the console.
+
+
 Results
 
 When running this example, the accuracy score of the Random Forest classifier on the testing data was 0.865. This means that the classifier correctly predicted whether a customer would churn or not 86.5% of the time.
@@ -42,6 +46,7 @@ We also calculated the feature importances of the classifier to see which featur
     Geography_Spain (0.010)
 
 This suggests that a customer's age, the number of products they have, their credit score, and their balance are the most important factors in predicting whether they will churn.
+
 Visualizing the Decision Trees
 
 Finally, we used the plot_tree() function to visualize the first decision tree in the Random Forest. This can help us understand how the classifier is making its predictions. Here's what the first tree looks like:
